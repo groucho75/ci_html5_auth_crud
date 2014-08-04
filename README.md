@@ -26,7 +26,7 @@ Installation
 
 5. Visit the home and enjoy it
 
-6. To enter the reserved area login as: <pre>admin@admin.com / password</pre>
+6. To enter the reserved area login as: admin@admin.com / password
 
 
 ***

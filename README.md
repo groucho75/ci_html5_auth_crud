@@ -16,15 +16,15 @@ It contains:
 Installation
 ------------
 
-1. Unzip the package and upload all files and folders to your server.
+1. Unzip the package and upload all files and folders to your server
 
-2. Create a database and put connection settings in `application/config/database.php`
+2. Create a database and set connection settings in `application/config/database.php`
 
-3. Crate and populate standard database tables using sql scripts in `application/sql`, usually: `ci.sql`, `ion_auth.sql`, `crud.sql`
+3. Create and populate standard database tables using sql scripts inside `application/sql`, usually: `ci.sql`, `ion_auth.sql`, `crud.sql`
 
 4. Edit minimal configurations in main `index.php` (more configs in `application/config` folder)
 
-5. Visit the home and enjoy it.
+5. Visit the home and enjoy it
 
 6. To enter the reserved area login as: admin@admin.com / password
 

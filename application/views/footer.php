@@ -6,7 +6,7 @@
       <div class="footer">
 
 		<p class="pull-right text-muted">
-			<small><a href="https://github.com/groucho75/" title="Credits" target="_blank">Credits</a></small>
+			<small><a href="https://github.com/groucho75/ci_html5_auth_crud" title="Credits" target="_blank">Credits</a></small>
 		</p>		
 		      	
         <p class="text-muted"><small><?php xecho ( $meta_desc ) ?></small></p>

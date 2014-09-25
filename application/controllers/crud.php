@@ -52,7 +52,7 @@ class Crud extends MY_Controller {
 		$crud->field_type('updated','invisible');
 		
 		$crud->unset_jquery();
-		//$crud->set_theme('twitter-bootstrap3');
+		$crud->set_theme('flexigrid-bootstrap3');
 
 		$crud->callback_before_update( array( $this, '_crud_index_before_insert_or_update' ) );
 		$crud->callback_before_insert( array( $this, '_crud_index_before_insert_or_update' ) );

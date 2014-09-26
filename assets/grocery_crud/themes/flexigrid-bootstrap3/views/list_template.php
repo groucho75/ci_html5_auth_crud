@@ -16,7 +16,8 @@
 	$this->set_js($this->default_theme_path.'/flexigrid-bootstrap3/js/jquery.form.js');
 	$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.numeric.min.js');
 	$this->set_js($this->default_theme_path.'/flexigrid-bootstrap3/js/jquery.printElement.min.js');
-
+    $this->set_js($this->default_theme_path.'/flexigrid-bootstrap3/js/custom.js');
+    
 	/** Fancybox */
 	$this->set_css($this->default_css_path.'/jquery_plugins/fancybox/jquery.fancybox.css');
 	$this->set_js($this->default_javascript_path.'/jquery_plugins/jquery.fancybox-1.3.4.js');
@@ -51,7 +52,7 @@ if($success_message !== null){?>
 	<div class="tDiv col-md-12">
 		<?php if(!$unset_add){?>
 		<div class="tDiv2">
-        	<a href='<?php echo $add_url?>' title='<?php echo $this->l('list_add'); ?> <?php echo $subject?>' class='btn add-anchor add_button'>
+        	<a href='<?php echo $add_url?>' title='<?php echo $this->l('list_add'); ?> <?php echo $subject?>' class='btn btn-primary add-anchor add_button'>
         	    <span class="glyphicon glyphicon-plus"></span>
         	    <?php echo $this->l('list_add'); ?> <?php echo $subject?>
             </a>
@@ -59,13 +60,13 @@ if($success_message !== null){?>
 		<?php }?>
 		<div class="tDiv3">
 			<?php if(!$unset_export) { ?>
-            <a data-url='<?php echo $export_url?>' title='<?php echo $this->l('list_export'); ?> <?php echo $subject?>' class='btn export-anchor' target="_blank">
+            <a data-url='<?php echo $export_url?>' title='<?php echo $this->l('list_export'); ?> <?php echo $subject?>' class='btn btn-default export-anchor' target="_blank">
                 <span class="glyphicon glyphicon-list-alt"></span>
                 <?php echo $this->l('list_export'); ?> <?php echo $subject?>
             </a>
 			<?php } ?>
 			<?php if(!$unset_print) { ?>
-            <a data-url='<?php echo $print_url?>' title='<?php echo $this->l('list_export'); ?> <?php echo $subject?>' class='btn print-anchor'>
+            <a data-url='<?php echo $print_url?>' title='<?php echo $this->l('list_export'); ?> <?php echo $subject?>' class='btn btn-default print-anchor'>
                 <span class="glyphicon glyphicon-print"></span>
                 <?php echo $this->l('list_print'); ?> <?php echo $subject?>
             </a>            

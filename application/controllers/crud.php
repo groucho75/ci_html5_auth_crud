@@ -56,7 +56,7 @@ class Crud extends MY_Controller {
 
 		$crud->callback_before_update( array( $this, '_crud_index_before_insert_or_update' ) );
 		$crud->callback_before_insert( array( $this, '_crud_index_before_insert_or_update' ) );
-				
+        
 		$data = array_merge ($data, (array)$crud->render() );
 		
 		$this->_make_layout('crud', $data);			

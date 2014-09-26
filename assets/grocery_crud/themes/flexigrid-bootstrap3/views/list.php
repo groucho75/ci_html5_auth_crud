@@ -3,8 +3,8 @@
 	$column_width = (int)(80/count($columns));
 	
 	if(!empty($list)){
-?><div class="bDiv row" >
-		<table cellspacing="0" cellpadding="0" border="0" id="flex1" class="col-md-12 table table-striped table-hover">
+?><div class="bDiv" >
+		<table cellspacing="0" cellpadding="0" border="0" id="flex1" class="col-md-12 table table-striped table-condensed table-hover">
 		<thead>
 			<tr class='hDiv'>
 				<?php foreach($columns as $column){?>
@@ -36,26 +36,32 @@
 			<td align="left" width='20%'>
 				<div class='tools'>				
 					<?php if(!$unset_delete){?>
-                    	<a href='<?php echo $row->delete_url?>' title='<?php echo $this->l('list_delete')?> <?php echo $subject?>' class="delete-row" >
-                    			<span class='delete-icon'></span>
+                    	<a href='<?php echo $row->delete_url?>' title='<?php echo $this->l('list_delete')?> <?php echo $subject?>' class="btn btn-sm btn-default delete-row" >
+                    		<span class="glyphicon glyphicon-remove"></span>
                     	</a>
                     <?php }?>
                     <?php if(!$unset_edit){?>
-						<a href='<?php echo $row->edit_url?>' title='<?php echo $this->l('list_edit')?> <?php echo $subject?>' class="edit_button"><span class='edit-icon'></span></a>
+				        <a href='<?php echo $row->edit_url?>' title='<?php echo $this->l('list_edit')?> <?php echo $subject?>' class="btn btn-sm btn-default edit_button">
+						    <span class="glyphicon glyphicon-pencil"></span>
+					    </a>
 					<?php }?>
 					<?php if(!$unset_read){?>
-						<a href='<?php echo $row->read_url?>' title='<?php echo $this->l('list_view')?> <?php echo $subject?>' class="edit_button"><span class='read-icon'></span></a>
+				        <a href='<?php echo $row->read_url?>' title='<?php echo $this->l('list_view')?> <?php echo $subject?>' class="btn btn-sm btn-default edit_button">
+						    <span class="glyphicon glyphicon-eye-open"></span>
+			             </a>
 					<?php }?>
 					<?php 
 					if(!empty($row->action_urls)){
 						foreach($row->action_urls as $action_unique_id => $action_url){ 
 							$action = $actions[$action_unique_id];
 					?>
-							<a href="<?php echo $action_url; ?>" class="<?php echo $action->css_class; ?> crud-action" title="<?php echo $action->label?>"><?php 
+							<a href="<?php echo $action_url; ?>" class="btn btn-sm btn-default <?php echo $action->css_class; ?> crud-action" title="<?php echo $action->label?>"><?php 
 								if(!empty($action->image_url))
 								{
 									?><img src="<?php echo $action->image_url; ?>" alt="<?php echo $action->label?>" /><?php 	
-								}
+								} else { ?>
+                                <span class="<?php if ( empty($action->css_class) ) : ?>glyphicon glyphicon-cog<?php endif; ?>"></span>
+                                <?php }
 							?></a>		
 					<?php }
 					}

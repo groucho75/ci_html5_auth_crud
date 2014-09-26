@@ -47,24 +47,24 @@ table th
 	padding-right:40px;
 }
 .flexigrid div.bDiv table {
-	margin-bottom:10px;
-	width: 100%;
+	/*margin-bottom:10px;
+	width: 100%;*/
 }
 .flexigrid div.bDiv table.autoht {
 	border-bottom:0px;
 	margin-bottom:0px;
 }
 .flexigrid div.nDiv td {
-	padding:2px 3px;
+	/*padding:2px 3px;
 	border:1px solid #eee;
-	cursor:default;
+	cursor:default;*/
 }
 .flexigrid div.nDiv tr:hover td,.flexigrid div.nDiv tr.ndcolover td {
-	background:#d5effc url(images/hl.png) repeat-x top;
-	border:1px solid #a8d8eb;
+	/*background:#d5effc url(images/hl.png) repeat-x top;
+	border:1px solid #a8d8eb;*/
 }
 .flexigrid div.nDiv td.ndcol1 {
-	border-right:1px solid #ccc;
+	/*border-right:1px solid #ccc;*/
 }
 .flexigrid div.nDiv td.ndcol2 {
 	border-left:1px solid #fff;
@@ -143,6 +143,7 @@ table th
 	background:url(images/ddn.png) no-repeat center;
 }
 .flexigrid div.tDiv /*toolbar*/ {
+	margin-bottom: 15px;
 	/*background:#fafafa url(images/bg.gif) repeat-x top;
 	position:relative;
 	border:1px solid #ccc;
@@ -372,7 +373,7 @@ div.form-div input.datetime-input
 	margin-left:10px;
 }
 .flexigrid div.bDiv table {
-	border-bottom:1px solid #ccc;
+	/*border-bottom:1px solid #ccc;*/
 }
 .flexigrid div.hGrip {
 	position:absolute;
@@ -810,10 +811,10 @@ div.flexigrid a:hover
 }
 .crud-action
 {
-	float:right;
+	/*float:right;
 	margin-left:5px;
 	padding:0px;
-	margin-right: 3px;
+	margin-right: 3px;*/
 }
 .readonly_label
 {

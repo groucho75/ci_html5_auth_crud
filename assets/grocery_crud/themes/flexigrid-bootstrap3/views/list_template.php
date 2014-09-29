@@ -37,12 +37,17 @@
 	var message_alert_delete = "<?php echo $this->l('alert_delete'); ?>";
 
 </script>
-<div id='list-report-error' class='report-div error'></div>
-<div id='list-report-success' class='report-div success report-list' <?php if($success_message !== null){?>style="display:block"<?php }?>><?php
-if($success_message !== null){?>
-	<p><?php echo $success_message; ?></p>
-<?php }
-?></div>
+
+<div class="container">
+    <div id='list-report-error' class='alert alert-danger report-div error'></div>
+    <div id='list-report-success' role="alert" class='alert alert-success alert-dismissible report-div success report-list' <?php if($success_message !== null){?>style="display:block"<?php }?>><?php
+    if($success_message !== null){?>
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    	<p><span class="glyphicon glyphicon-ok"></span> <?php echo $success_message; ?></p>
+    <?php }
+    ?></div>
+</div>
+
 <div class="flexigrid container" data-unique-hash="<?php echo $unique_hash; ?>">
 	<div id="hidden-operations" class="hidden-operations"></div>
 	
@@ -52,7 +57,7 @@ if($success_message !== null){?>
 	<div class="tDiv col-md-12">
 		<?php if(!$unset_add){?>
 		<div class="tDiv2">
-        	<a href='<?php echo $add_url?>' title='<?php echo $this->l('list_add'); ?> <?php echo $subject?>' class='btn btn-primary add-anchor add_button'>
+        	<a href='<?php echo $add_url?>' title='<?php echo $this->l('list_add'); ?> <?php echo $subject?>' class='btn btn-primary btn-large add-anchor add_button'>
         	    <span class="glyphicon glyphicon-plus"></span>
         	    <?php echo $this->l('list_add'); ?> <?php echo $subject?>
             </a>

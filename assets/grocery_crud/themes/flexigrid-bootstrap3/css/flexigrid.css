@@ -515,9 +515,9 @@ div.colCopy {
 .flexigrid tr.erow td.sorted div {
 }
 .flexigrid div.bDiv tr:hover td,.flexigrid div.bDiv tr:hover td.sorted,.flexigrid div.bDiv tr.trOver td.sorted,.flexigrid div.bDiv tr.trOver td {
-	background:#d9ebf5;
+	/*background:#d9ebf5;
 	border-left:1px solid #eef8ff;
-	border-bottom:1px dotted #a8d8eb;
+	border-bottom:1px dotted #a8d8eb;*/
 }
 .flexigrid div.bDiv tr.trSelected:hover td,.flexigrid div.bDiv tr.trSelected:hover td.sorted,.flexigrid div.bDiv tr.trOver.trSelected td.sorted,.flexigrid div.bDiv tr.trOver.trSelected td,.flexigrid tr.trSelected td.sorted,.flexigrid tr.trSelected td {
 	background:#d5effc url(images/hl.png) repeat-x top;
@@ -747,27 +747,27 @@ div.pGroup {
 }
 .report-div.success
 {
-	border-color: green;
+	/*border-color: green;*/
 }
 .report-div.success p
 {
-	background: url(images/success.png) no-repeat left center;
+	/*background: url(images/success.png) no-repeat left center;
 	margin: 0px !important;
-	padding: 10px 0px 10px 25px !important;
+	padding: 10px 0px 10px 25px !important;*/
 }
 .report-div.error
 {
-	border-color: red;
+	/*border-color: red;*/
 }
 .report-div.error p
 {
-	background: url(images/error.png) no-repeat left center;
+	/*background: url(images/error.png) no-repeat left center;
 	margin: 0px !important;
-	padding: 10px 0px 10px 25px !important;
+	padding: 10px 0px 10px 25px !important;*/
 }
 input.field_error
 {
-	border: 1px solid red !important;
+	/*border: 1px solid red !important;*/
 }
 .flexigrid  .ftitle-left
 {
@@ -805,7 +805,7 @@ div.flexigrid a:hover
 	width:16px;
 	height:15px;
 	padding-left:25px;
-	padding-top:1px;
+	padding-top:0;
 	display: none;
 }
 .crud-action

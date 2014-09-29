@@ -47,12 +47,12 @@
 			<!-- End of hidden inputs -->
 			<?php if ($is_ajax) { ?><input type="hidden" name="is_ajax" value="true" /><?php }?>
 
-			<div id='report-error' class='report-div error'></div>
-			<div id='report-success' class='report-div success'></div>
+			<div id='report-error' class='alert alert-danger report-div error'></div>
+			<div id='report-success' class='alert alert-success report-div success'></div>
 		</div>
 		<div class="pDiv">
 			<div class='form-button-box'>
-				<input id="form-button-save" type='submit' value='<?php echo $this->l('form_save'); ?>'  class="btn btn-large"/>
+				<input id="form-button-save" type='submit' value='<?php echo $this->l('form_save'); ?>' class="btn btn-primary btn-large"/>
 			</div>
 <?php 	if(!$this->unset_back_to_list) { ?>
 			<div class='form-button-box'>

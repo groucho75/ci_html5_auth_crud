@@ -17,7 +17,7 @@
 				<?php }?>
 				<?php if(!$unset_delete || !$unset_edit || !$unset_read || !empty($actions)){?>
 				<th align="left" abbr="tools" axis="col1" class="" width='20%'>
-					<div class="text-right">
+					<div>
 						<?php echo $this->l('list_actions'); ?>
 					</div>
 				</th>

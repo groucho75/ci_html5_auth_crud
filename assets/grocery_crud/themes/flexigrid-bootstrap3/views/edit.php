@@ -1,9 +1,11 @@
 <?php
-
+    //$this->set_js_lib($this->default_javascript_path.'/'.grocery_CRUD::JQUERY);
+    $this->set_js_lib($this->default_theme_path.'/flexigrid-bootstrap3/js/jquery-migrate.js');
+    
 	$this->set_css($this->default_theme_path.'/flexigrid-bootstrap3/css/flexigrid.css');
 	$this->set_js_lib($this->default_theme_path.'/flexigrid-bootstrap3/js/jquery.form.js');
 	$this->set_js_config($this->default_theme_path.'/flexigrid-bootstrap3/js/flexigrid-edit.js');
-
+    
 	$this->set_js_lib($this->default_javascript_path.'/jquery_plugins/jquery.noty.js');
 	$this->set_js_lib($this->default_javascript_path.'/jquery_plugins/config/jquery.noty.config.js');
 ?>
@@ -14,9 +16,6 @@
 				<?php echo $this->l('form_edit'); ?> <?php echo $subject?>
 			</div>
 			<div class='clear'></div>
-		</div>
-		<div title="<?php echo $this->l('minimize_maximize');?>" class="ptogtitle">
-			<span></span>
 		</div>
 	</div>
 <div id='main-table-box'>
@@ -29,11 +28,11 @@
 				$even_odd = $counter % 2 == 0 ? 'odd' : 'even';
 				$counter++;
 		?>
-			<div class='form-field-box <?php echo $even_odd?>' id="<?php echo $field->field_name; ?>_field_box">
-				<div class='form-display-as-box' id="<?php echo $field->field_name; ?>_display_as_box">
+			<div class='form-group <?php echo $even_odd?>' id="<?php echo $field->field_name; ?>_field_box">
+				<label for="<?php echo $field->field_name; ?>" class="col-sm-2 control-label" id="<?php echo $field->field_name; ?>_display_as_box">
 					<?php echo $input_fields[$field->field_name]->display_as?><?php echo ($input_fields[$field->field_name]->required)? "<span class='required'>*</span> " : ""?> :
-				</div>
-				<div class='form-input-box' id="<?php echo $field->field_name; ?>_input_box">
+				</label>
+				<div class="col-sm-10" id="<?php echo $field->field_name; ?>_input_box">
 					<?php echo $input_fields[$field->field_name]->input?>
 				</div>
 				<div class='clear'></div>

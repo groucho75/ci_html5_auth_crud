@@ -47,7 +47,8 @@ class Crud extends MY_Controller {
 		$crud = new grocery_CRUD();
 		$crud->set_table('items');
 		
-		$crud->fields('name', 'updated');
+		$crud->fields('name', 'updated', 'description', 'published');
+        
 		$crud->required_fields('name');
 		$crud->field_type('updated','invisible');
 		

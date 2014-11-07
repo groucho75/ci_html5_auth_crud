@@ -10,6 +10,7 @@ It contains:
 * [Grocery Crud 1.4.1](http://www.grocerycrud.com/)
 * [Html5 Boilerplate + Bootstrap 3.1.1](http://www.initializr.com/)
 
+It's ready to use **Composer**: please read the [wiki page about that](https://github.com/groucho75/ci_html5_auth_crud/wiki/How-to-use-Composer).
 
 ***
 

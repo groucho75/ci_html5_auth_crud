@@ -3,14 +3,13 @@ ci_html5_auth_crud
 
 A ready-to-use web installation based on CodeIgniter, including an auth module, a CRUDL system, an html5 layout.
 
-It contains:
+Features:
 
 * [CodeIgniter 2.2.0](https://ellislab.com/codeigniter/)
 * [Ion Auth 2.5.2](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
 * [Grocery Crud 1.4.1](http://www.grocerycrud.com/)
 * [Html5 Boilerplate + Bootstrap 3.1.1](http://www.initializr.com/)
-
-It's ready to use **Composer**: please read the [wiki page about that](https://github.com/groucho75/ci_html5_auth_crud/wiki/How-to-use-Composer).
+* [Composer](https://getcomposer.org)
 
 ***
 
@@ -28,6 +27,8 @@ Installation
 5. Visit the home and enjoy it
 
 6. To enter the reserved area login as: admin@admin.com / password
+
+7. You can load packages via Composer: here is a [wiki page](https://github.com/groucho75/ci_html5_auth_crud/wiki/How-to-use-Composer).
 
 
 ***

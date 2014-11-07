@@ -1,0 +1,7 @@
+{
+    "config": {
+        "vendor-dir": "application/third_party/composer"
+    },
+    "require": {
+    }
+}

@@ -13,3 +13,7 @@ assets/uploads/files/!index.html
 # Aptana IDE
 .project
 .settings
+
+# Composer
+/application/third_party/composer
+composer.lock

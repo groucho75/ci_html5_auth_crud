@@ -218,6 +218,17 @@ if (defined('ENVIRONMENT'))
 	}
 
 /*
+ * ---------------------------------------------------------------
+ *  Include Composer autoload, if used.
+ * ---------------------------------------------------------------
+ */
+if ( file_exists(APPPATH . 'third_party/composer/autoload.php') )
+{
+	require APPPATH . 'third_party/composer/autoload.php';
+}
+
+
+/*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
  * --------------------------------------------------------------------

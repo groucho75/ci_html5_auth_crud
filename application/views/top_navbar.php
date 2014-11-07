@@ -21,6 +21,9 @@
 
 					<li class="<?php if ( uri_string() == 'crud/index') echo 'active' ?>"><a href="crud/index">CRUD sample</a></li>
 				
+					<?php if ( $this->ion_auth->is_admin() ) : ?>
+					<li class="<?php if ( strpos( uri_string(), 'auth') !== FALSE ) echo 'active' ?>"><a href="auth">Users</a></li>
+					<?php endif; ?>
 					
 					
 					<!--		

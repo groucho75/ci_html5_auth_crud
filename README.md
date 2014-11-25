@@ -28,7 +28,7 @@ Installation
 
 6. To enter the reserved area login as: admin@admin.com / password
 
-7. You can load packages via Composer: here is a [wiki page](https://github.com/groucho75/ci_html5_auth_crud/wiki/How-to-use-Composer).
+7. You can add packages loaded via Composer: here is a [wiki page](https://github.com/groucho75/ci_html5_auth_crud/wiki/How-to-use-Composer).
 
 
 ***

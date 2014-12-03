@@ -1,4 +1,18 @@
 {
+    "name": "groucho75/ci_html5_auth_crud",
+    "description": "A ready-to-use web installation based on CodeIgniter, including an auth module, a CRUDL system, an html5 layout.",
+    "type": "library",
+    "keywords": ["php", "framework", "html5", "crud", "codeigniter"],
+    "homepage": "https://github.com/groucho75/ci_html5_auth_crud",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alessandro Massasso",
+            "email": "alo@eventualo.net",
+            "homepage": "http://www.eventualo.net",
+            "role": "Developer"
+        }
+    ],
     "config": {
         "vendor-dir": "application/third_party/composer"
     },

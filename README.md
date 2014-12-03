@@ -16,7 +16,11 @@ Features:
 Installation
 ------------
 
-1. Unzip the package and upload all files and folders to your server
+1. Unzip the package and upload all files and folders to your server, or if you are using Composer you can launch:
+
+   ```  
+   $ composer create-project groucho75/ci_html5_auth_crud my_project -s dev
+   ```  
 
 2. Create a database and set connection settings in `application/config/database.php`
 
